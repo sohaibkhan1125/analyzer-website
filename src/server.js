@@ -8,7 +8,7 @@ const port = 3001;
 
 // Explicitly allow requests from http://localhost:3000 (your React app's origin)
 const corsOptions = {
-  origin: '*',
+  origin: 'https://analyzer-website.vercel.app/',
   optionsSuccessStatus: 200,
 };
 
