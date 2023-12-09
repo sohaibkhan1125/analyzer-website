@@ -12,8 +12,6 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
-
-
 app.use(cors(corsOptions));
 app.use(express.json());
 
@@ -64,8 +62,8 @@ function calculateLinkRatio(html, baseUrl) {
   return { internalLinks, externalLinks };
 }
 
-app.post('/analyze', async (req, res) => {
-  const { url } = req.body;
+app.get('/analyze', async (req, res) => {
+  const { url } = req.query; // Use req.query to get parameters from the query string
 
   try {
     // Fetch HTML content of the provided URL
