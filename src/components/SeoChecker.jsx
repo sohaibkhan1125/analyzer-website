@@ -18,7 +18,7 @@ function SeoChecker() {
       setIsLoading(true); 
 
       const startTime = performance.now();
-      const response = await axios.get('https://analyzer-website.vercel.app/analyze', { params: { url } });
+      const response = await axios.post('https://analyzer-website.vercel.app//analyze', { url });
       const endTime = performance.now();
 
       setSeoReport(response.data);

@@ -8,9 +8,11 @@ const port = 3001;
 
 // Explicitly allow requests from http://localhost:3000 (your React app's origin)
 const corsOptions = {
-  origin: 'https://analyzer-website.vercel.app/', // Update this to the correct origin
+  origin:  '*',  // Update this to the correct origin
   optionsSuccessStatus: 200,
 };
+
+
 
 app.use(cors(corsOptions));
 app.use(express.json());
@@ -62,8 +64,8 @@ function calculateLinkRatio(html, baseUrl) {
   return { internalLinks, externalLinks };
 }
 
-app.get('/analyze', async (req, res) => {
-  const { url } = req.query; // Use req.query to get parameters from the query string
+app.post('/analyze', async (req, res) => {
+  const { url } = req.body;
 
   try {
     // Fetch HTML content of the provided URL
