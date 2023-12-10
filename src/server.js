@@ -5,10 +5,10 @@ const cors = require('cors');
 
 const app = express();
 const port = 3001;
-
+app.use(cors());
 // Explicitly allow requests from http://localhost:3000 (your React app's origin)
 const corsOptions = {
-  origin: 'https://your-vercel-app.vercel.app',
+  origin: '*',
   optionsSuccessStatus: 200,
 };
 
@@ -130,3 +130,8 @@ app.post('/analyze', async (req, res) => {
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server is running on port ${port}`);
 });
+
+// Use cors middleware with specific origin
+app.use(cors({
+  origin: 'https://test.mymade.online',
+}));

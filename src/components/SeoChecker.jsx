@@ -18,7 +18,7 @@ function SeoChecker() {
       setIsLoading(true); 
 
       const startTime = performance.now();
-      const response = await axios.post('/analyze', { url });
+      const response = await axios.post('http://localhost:3001/analyze', { url });
       const endTime = performance.now();
 
       setSeoReport(response.data);
@@ -145,7 +145,7 @@ function SeoChecker() {
         <p className='text-xl text-center mt-4'>Elevate Your Online Presence: Your Ultimate Guide to SEO Success <br /> with Website SEO Checker.</p>
         <div className='flex flex-col text-center'>
           <input
-            className='border-[#34495e] text-black border-[2px] w-[55%] ml-[22%] mt-5 py-1 rounded-lg px-2'
+            className='border-[#34495e] text-black border-[2px] w-[90%] sm:w-[55%] ml-[5%] sm:ml-[22%] mt-5 py-1 rounded-lg px-2'
             placeholder='Enter your URL'
             type="text"
             value={url}

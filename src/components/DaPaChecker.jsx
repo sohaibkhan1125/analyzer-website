@@ -54,9 +54,10 @@ function DaPaChecker() {
       )}
       <div className='bg-[#003366] text-white w-[100%] border-[2px] border-[#34495e] p-5'>
         <h1 className='text-center text-3xl font-semibold'>Website DA PA Checker</h1>
+        <p className='text-xl mt-4 text-center'>Discover the online authority of any website with our DA PA Checker tool instantly. Boost rankings!</p>
         <div className='flex flex-col text-center'>
           <input
-            className='border-[#34495e] text-black border-[2px] w-[55%] ml-[22%] mt-5 py-1 rounded-lg px-2'
+            className='border-[#34495e] text-black border-[2px] w-[90%] sm:w-[55%] ml-[5%] sm:ml-[22%] mt-5 py-1 rounded-lg px-2'
             placeholder='Enter your URL'
             type="text"
             value={url}
