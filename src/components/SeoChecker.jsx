@@ -18,7 +18,7 @@ function SeoChecker() {
       setIsLoading(true); 
 
       const startTime = performance.now();
-      const response = await axios.post('http://localhost:3001/analyze', { url });
+      const response = await axios.post('https://marvelous-valkyrie-f54533.netlify.app/analyze', { url });
       const endTime = performance.now();
 
       setSeoReport(response.data);
