@@ -133,5 +133,5 @@ app.listen(port, '0.0.0.0', () => {
 
 // Use cors middleware with specific origin
 app.use(cors({
-  origin: 'https://test.mymade.online',
+  origin: 'https://marvelous-valkyrie-f54533.netlify.app/',
 }));
