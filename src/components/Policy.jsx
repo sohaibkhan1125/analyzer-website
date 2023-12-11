@@ -5,7 +5,7 @@ const Policy = () => {
     <section className='ml-6 mt-3'>
         <h1 className='text-2xl font-bold'>Privacy Policy</h1>
 <p>Last updated: December 10, 2023</p>
-<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+{/* <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
 <h2 className='text-xl font-semibold'>Interpretation and Definitions</h2>
 <h3 className='text-xl'>Interpretation</h3>
@@ -169,8 +169,8 @@ const Policy = () => {
 <h2 className="text-xl font-semibold">Contact Us</h2>
 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
 <ul>
-<li>By email: admin@website-seo-checker.net</li>
-</ul>
+<li>By email: <a href="mailto:support@website-seo-checker.net">support@website-seo-checker.net</a> </li>
+</ul> */}
     </section>
   )
 }
